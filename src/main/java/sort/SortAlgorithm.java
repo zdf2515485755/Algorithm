@@ -23,15 +23,7 @@ public class SortAlgorithm
      */
     public static boolean judgeArray(int[] array)
     {
-        if (null == array || array.length == 1)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-
-        }
+        return null == array || array.length == 1;
     }
     /**
      * 选择排序(从小到大)
@@ -101,7 +93,7 @@ public class SortAlgorithm
 
 
     public static void main(String[] args) {
-        int[] arrays = {1,2,3};
+        int[] arrays = {1};
         //selectSort(arrays);
         //bubbleSort(arrays);
         insertSort(arrays);
